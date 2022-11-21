@@ -8,6 +8,13 @@ namespace InteractiveFiction
 {
     internal class Program
     {
+       /* static string[,] story = new string[,]
+        {
+            {"" }
+
+
+        }*/
+
         static void Main(string[] args)
         {
             Console.WriteLine("Interactive Fiction");
