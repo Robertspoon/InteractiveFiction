@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace InteractiveFiction
 {
+    string[] lines = System.IO.File.ReadAllLines(@"C:\")
     internal class Program
     {
        /* static string[,] story = new string[,]
@@ -18,6 +19,8 @@ namespace InteractiveFiction
         static void Main(string[] args)
         {
             Console.WriteLine("Interactive Fiction");
+
+
 
             Console.ReadKey(true);
         }
