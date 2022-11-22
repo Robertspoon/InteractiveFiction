@@ -29,8 +29,54 @@ B:    Leave it be (Go to page 5)
 
 
 PAGE 4
+You open your closet. Immediately, you are sucked in and are falling through a dark void. You dont know where you are or how long its been. 5 minutes, days years? you dont know, you just keep falling. There has to be some way out of this.
+    
+           MAKE YOUR CHOICE:
 
+A:    Wake up (Go to page 8)
+B:    Keep falling (Go to page 9)
 
 
 
 PAGE 5
+You decide to not open it and chalk it up to it being the wind outside. You instead decide to go downstairs to make some breakfast
+
+      MAKE YOUR CHOICE:
+
+A:    Make toast (Go to page 6)
+B:    Make bacon and eggs (Go to page 7)
+
+PAGE 6
+You decide to make some toast. Its pretty good, what a nice normal way to start you day!
+
+END
+Return to Main Menu
+
+
+PAGE 7
+You decide to make bacon and eggs. You began to eat them when you realize something. Where did your fork go? Matter fact, where did everything go? You find yourself falling through an endless void, darkness all around where you look you thought you could escape it by not checking the closet, but it comes for you in the end. Choice is merely an illusion.
+
+A:     Wake up (Go to page 8)
+B:     Realize your reality (Go to page 10)
+
+
+PAGE 8
+You open your eyes.You finally stopped falling and are back in your bed. It seems like it was all just a harmless dream. You get out of your bed, ready to start your day for real this time, until you start to hear a familiar noise, coming from a familiar place. Was it really all just a dream?
+
+END
+Return to Main Menu
+
+
+PAGE 9
+You keep on falling, into the never ending void. After years of falling, you've accepted your new existence, continuely falling until the end of time. Why you? You don't know. All you know now is the aybss that is now your reality.
+
+END 
+Return to Main Menu
+
+PAGE 10
+You have a sudden realization, this has happened before, countless times, waking up, and then falling. You've tried to escape it who knows how many times. Like you have before, you eventually give in....
+
+A: Continue loop (Go to page 1)
+
+
+
