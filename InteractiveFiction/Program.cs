@@ -8,15 +8,17 @@ namespace InteractiveFiction
 {
     internal class Program
     {
-        static string[] story = System.IO.File.ReadAllLines("Story.txt");
+        //static string[] story = System.IO.File.ReadAllLines("Story.txt");
+
+        
        
 
         static void Main(string[] args)
         {
-            story = new string[9];
 
 
-            Console.WriteLine("Story:" + story[2]);
+
+            
 
             
 
