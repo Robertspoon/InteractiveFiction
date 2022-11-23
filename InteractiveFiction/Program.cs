@@ -6,21 +6,19 @@ using System.Threading.Tasks;
 
 namespace InteractiveFiction
 {
-    string[] lines = System.IO.File.ReadAllLines(@"C:\")
     internal class Program
     {
-       /* static string[,] story = new string[,]
-        {
-            {"" }
-
-
-        }*/
+        static string[] story = System.IO.File.ReadAllLines("Story.txt");
+       
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Interactive Fiction");
+            story = new string[9];
 
 
+            Console.WriteLine("Story:" + story[2]);
+
+            
 
             Console.ReadKey(true);
         }
