@@ -10,7 +10,7 @@ namespace InteractiveFiction
     internal class Program
     {
         static string[] story = File.ReadAllLines("Story.txt");
-
+       // static string[] words = story.Split
 
 
         static bool gameOver = false;
@@ -23,13 +23,13 @@ namespace InteractiveFiction
         static void Main(string[] args)
         {
 
-            
+            ShowCurrPage();
 
             
 
             
 
-            Console.ReadKey(true);
+           Console.ReadKey(true);
         }
         static void ShowCurrPage()
         {
@@ -37,7 +37,13 @@ namespace InteractiveFiction
             {
                 Console.WriteLine(story[currPageNum]);
 
+
             }
+
+
+        }
+        static void MainMenu()
+        {
 
 
         }
