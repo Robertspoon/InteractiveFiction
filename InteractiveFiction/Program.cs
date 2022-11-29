@@ -9,11 +9,13 @@ namespace InteractiveFiction
 {
     internal class Program
     {
-        static string[] story = File.ReadAllLines("Story.txt");
-       // static string[] words = story.Split
+        static string story = File.ReadAllText("Story.txt"); //reads story from text file
+        static string[] words = story.Split(';');
+        static string[] storyPages = story.Split('%');
 
 
         static bool gameOver = false;
+
 
 
         
@@ -33,15 +35,19 @@ namespace InteractiveFiction
         }
         static void ShowCurrPage()
         {
-            for (int currPageNum = 0; currPageNum < story.Length; currPageNum++)
+            for (int currPageNum = 0; currPageNum < story.Split(';').Length; currPageNum++)
             {
-                Console.WriteLine(story[currPageNum]);
+                Console.WriteLine(story.Split(';')[currPageNum]);
 
 
             }
 
+            Console.WriteLine(story.Split(';').Length);
+
 
         }
+
+
         static void MainMenu()
         {
 
