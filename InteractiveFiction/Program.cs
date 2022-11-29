@@ -10,12 +10,12 @@ namespace InteractiveFiction
     internal class Program
     {
         static string story = File.ReadAllText("Story.txt"); //reads story from text file
-        static string[] words = story.Split(';');
+        static string[] words = story.Split(';');//splits story at ";" point
         static string[] storyPages = story.Split('%');
-
+        static int currPageNum = 1;
 
         static bool gameOver = false;
-
+        static bool storyLoop = true;
 
 
         
@@ -25,7 +25,39 @@ namespace InteractiveFiction
         static void Main(string[] args)
         {
 
-            ShowCurrPage();
+          while(storyLoop ==true)
+          {
+
+
+            Console.WriteLine(storyPages[currPageNum].Split(';')[0]);
+            Console.WriteLine();
+            Console.WriteLine(storyPages[currPageNum].Split(';')[1]);
+
+            if (storyPages[currPageNum].Split(';').GetLength(0) > 2)
+            {
+              Console.WriteLine(storyPages[currPageNum].Split(';')[2]);
+
+              ConsoleKeyInfo input;
+               input = Console.ReadKey(true);
+
+              if(input.KeyChar == 'a')
+              {
+               currPageNum = Int32.Parse(storyPages[currPageNum].Split(';')[3]); 
+              }
+              if (input.KeyChar == 'b')
+              {
+                currPageNum = Int32.Parse(storyPages[currPageNum].Split(';')[4]);
+              }
+
+            }
+            else
+            {
+                 Console.ReadKey(true);
+                    storyLoop = false;
+            }
+
+
+          }
 
             
 
@@ -35,14 +67,8 @@ namespace InteractiveFiction
         }
         static void ShowCurrPage()
         {
-            for (int currPageNum = 0; currPageNum < story.Split(';').Length; currPageNum++)
-            {
-                Console.WriteLine(story.Split(';')[currPageNum]);
 
-
-            }
-
-            Console.WriteLine(story.Split(';').Length);
+            //Console.WriteLine(story.Split(';').Length);
 
 
         }
