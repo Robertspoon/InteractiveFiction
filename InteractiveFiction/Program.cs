@@ -73,9 +73,11 @@ namespace InteractiveFiction
 
             
         } 
-        static void MainMenu()
+        static void MainMenu()  //Display main menu of game
         {
             Console.WriteLine("Insane story");
+            Console.WriteLine();
+            Console.WriteLine("Press any key to start...");
             ConsoleKeyInfo input;
             input = Console.ReadKey(true);
 
