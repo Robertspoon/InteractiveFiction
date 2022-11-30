@@ -12,6 +12,7 @@ namespace InteractiveFiction
         static string story = File.ReadAllText("Story.txt"); //reads story from text file
         static string[] words = story.Split(';');//splits story at ";" point
         static string[] storyPages = story.Split('%');//splits story into pages by "%"
+        static string[] End = story.Split('&');
         static int currPageNum = 1;
 
         //static bool gameOver = false;
@@ -50,6 +51,7 @@ namespace InteractiveFiction
                 if (storyPages[currPageNum].Split(';').GetLength(0) > 2)
                 {
                     Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine();
                     Console.WriteLine(storyPages[currPageNum].Split(';')[2]);
 
                     ConsoleKeyInfo input;
