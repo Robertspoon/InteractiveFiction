@@ -24,6 +24,8 @@ namespace InteractiveFiction
 
         static void Main(string[] args)
         {
+            MainMenu();
+            
             while(storyLoop ==true)
             {
                 ShowCurrPage();
@@ -73,6 +75,15 @@ namespace InteractiveFiction
         } 
         static void MainMenu()
         {
+            Console.WriteLine("Insane story");
+            ConsoleKeyInfo input;
+            input = Console.ReadKey(true);
+
+            if (input.KeyChar == 'a')
+            {
+                ShowCurrPage();
+            }
+            Console.Clear();
 
         }
     }
