@@ -36,16 +36,18 @@ namespace InteractiveFiction
         }
         static void ShowCurrPage()//Shows the current page and allows you to go through story
         {
-           
-            
 
 
+
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(storyPages[currPageNum].Split(';')[0]);
                 Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine(storyPages[currPageNum].Split(';')[1]);
 
                 if (storyPages[currPageNum].Split(';').GetLength(0) > 2)
                 {
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine(storyPages[currPageNum].Split(';')[2]);
 
                     ConsoleKeyInfo input;
@@ -59,7 +61,7 @@ namespace InteractiveFiction
                     {
                         currPageNum = Int32.Parse(storyPages[currPageNum].Split(';')[4]);
                     }
-
+                    Console.Clear();
                 }
                 else
                 {
