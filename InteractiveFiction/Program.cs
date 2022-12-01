@@ -13,10 +13,10 @@ namespace InteractiveFiction
         static string[] words = story.Split(';');//splits story at ";" point
         static string[] storyPages = story.Split('%');//splits story into pages by "%"
         static string[] End = story.Split('&');
-        static int currPageNum = 1;
+        static int currPageNum = 0;
 
         //static bool gameOver = false;
-        static bool storyLoop = true;//Loops through story allowing gameplay
+        static bool storyLoop = true; //Loops through story allowing gameplay
 
 
         
@@ -25,10 +25,10 @@ namespace InteractiveFiction
 
         static void Main(string[] args)
         {
-            MainMenu();
             
             while(storyLoop ==true)
             {
+               // MainMenu();
                 ShowCurrPage();
             }
 
@@ -39,8 +39,7 @@ namespace InteractiveFiction
         }
         static void ShowCurrPage()//Shows the current page and allows you to go through story
         {
-
-
+  
 
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(storyPages[currPageNum].Split(';')[0]);
@@ -66,6 +65,7 @@ namespace InteractiveFiction
                         currPageNum = Int32.Parse(storyPages[currPageNum].Split(';')[4]);
                     }
                     Console.Clear();
+
                 }
                 else
                 {
@@ -77,9 +77,8 @@ namespace InteractiveFiction
         } 
         static void MainMenu()  //Display main menu of game
         {
-            Console.WriteLine("Insane story");
-            Console.WriteLine();
-            Console.WriteLine("Press any key to start...");
+
+            Console.WriteLine(storyPages[currPageNum].Split(';')[0]);
             ConsoleKeyInfo input;
             input = Console.ReadKey(true);
 
