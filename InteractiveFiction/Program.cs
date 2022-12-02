@@ -27,7 +27,7 @@ namespace InteractiveFiction
             
             while(storyLoop ==true)
             {
-               // MainMenu();
+               
                 ShowCurrPage();
             }
 
@@ -74,19 +74,6 @@ namespace InteractiveFiction
 
             
         } 
-        static void MainMenu()  //Display main menu of game
-        {
-
-            Console.WriteLine(storyPages[currPageNum].Split(';')[0]);
-            ConsoleKeyInfo input;
-            input = Console.ReadKey(true);
-
-            if (input.KeyChar == 'a')
-            {
-                ShowCurrPage();
-            }
-            Console.Clear();
-
-        }
+        
     }
 }

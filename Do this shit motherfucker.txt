@@ -1,3 +1,0 @@
-Finish main menu
-make it so ending loops back to page 1
-make it so you can return to main menu after losing/ending game
