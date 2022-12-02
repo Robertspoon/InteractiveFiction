@@ -12,8 +12,7 @@ namespace InteractiveFiction
         static string story = File.ReadAllText("Story.txt"); //reads story from text file
         static string[] words = story.Split(';');//splits story at ";" point
         static string[] storyPages = story.Split('%');//splits story into pages by "%"
-        static string[] End = story.Split('&');
-        static int currPageNum = 0;
+        static int currPageNum = 0;//stores current page that youre on
 
         //static bool gameOver = false;
         static bool storyLoop = true; //Loops through story allowing gameplay
